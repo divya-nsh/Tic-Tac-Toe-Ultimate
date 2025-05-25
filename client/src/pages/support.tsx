@@ -14,7 +14,7 @@ export default function SupportPage() {
 
         <div className="space-y-4">
           <a
-            href="https://github.com/divya-nsh"
+            href="https://github.com/divya-nsh/Tic-Tac-Toe-Ultimate"
             target="_blank"
             rel="noopener noreferrer"
             className="block bg-blue-600 hover:bg-blue-700 transition rounded px-4 py-2 font-medium"

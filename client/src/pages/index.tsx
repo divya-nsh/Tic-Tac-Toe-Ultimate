@@ -26,7 +26,12 @@ export function HomePage() {
         <footer className=" text-xs mt-1 text-neutral-400 italic text-center">
           <p>
             Created by{" "}
-            <a href="https://divyanshsoni.site" className="underline">
+            <a
+              rel="noopener"
+              target="_blank"
+              href="https://divyanshsoni.site"
+              className="underline"
+            >
               Divyansh soni
             </a>
           </p>
@@ -34,7 +39,7 @@ export function HomePage() {
             <Star size={12} weight="fill" />
             Give a star on{" "}
             <a
-              href="https://github.com/your-repo" // <-- update this
+              href="https://github.com/divya-nsh/Tic-Tac-Toe-Ultimate" // <-- update this
               target="_blank"
               rel="noopener noreferrer"
               className="underline"
