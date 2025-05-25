@@ -390,25 +390,23 @@ export default function Room() {
           </>
         )}
       </div>
-      {(status === "disconnected" || status === "aborted") && (
-        <Dialog>
-          <DialogContent className=" absolute inset-0 bg-black/80 flex flex-col gap-2 items-center justify-center text-lg font-medium text-neutral-400">
-            {status === "aborted" ? (
-              <>
-                <p>Room Aborted</p>
-                <p className=" text-sm">
-                  Either other player leave the room or Room timeout
-                </p>
-              </>
-            ) : (
-              <>
-                <WifiHigh size={50} className=" animate-ping mb-6" />
-                <p>Hold on Reconnecting..</p>
-              </>
-            )}
-          </DialogContent>
-        </Dialog>
-      )}
+      <Dialog open={status === "disconnected" || status === "aborted"}>
+        <DialogContent className=" absolute inset-0 bg-black/80 flex flex-col gap-2 items-center justify-center text-lg font-medium text-neutral-400">
+          {status === "aborted" ? (
+            <>
+              <p>Room Aborted</p>
+              <p className=" text-sm">
+                Either other player leave the room or Room timeout
+              </p>
+            </>
+          ) : (
+            <>
+              <WifiHigh size={50} className=" animate-ping mb-6" />
+              <p>Hold on Reconnecting..</p>
+            </>
+          )}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }

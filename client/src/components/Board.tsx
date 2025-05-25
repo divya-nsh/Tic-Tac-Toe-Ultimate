@@ -21,10 +21,8 @@ export default function TicTacBoard({
 
   useEffect(() => {
     const calcCellSize = () => {
-      console.log("REsizng...");
       const width = Math.min(window.innerWidth, 400);
       const cellSize = Math.min(Math.floor(width / board.length), 80);
-      console.log({ cellSize: cellSize - 20 });
       setSize(Math.max(2, cellSize - 10));
     };
 
