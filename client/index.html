@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="%VITE_SERVER_URL%" crossorigin />
+    <!-- Dns-prefetch here serve as a fallback for browsers that don't support preconnect. -->
+    <link rel="dns-prefetch" href="%VITE_SERVER_URL%" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kalam:wght@300;400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #171717; /* Equivalent to bg-neutral-900 */
+        color: #e5e5e5; /* Equivalent to text-neutral-200 */
+      }
+    </style>
+
+    <title>Tic Tac Toe Ultimate</title>
+  </head>
+  <body>
+    <div id="root">
+      <p style="text-align: center; padding-top: 10px">Loading....</p>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

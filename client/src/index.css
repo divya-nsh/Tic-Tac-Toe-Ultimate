@@ -1,0 +1,72 @@
+@import "tailwindcss";
+@import "tailwindcss-animated";
+
+body {
+  background-color: #171717; /* Equivalent to bg-neutral-900 */
+  color: #e5e5e5; /* Equivalent to text-neutral-200 */
+}
+
+.word-break {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word; /* Added for best cross-browser support */
+}
+
+/* styles.css */
+.dark-scroll {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: hsl(0, 0%, 30%) hsla(0, 0%, 0%, 0); /* Firefox */
+}
+
+.dark-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dark-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dark-scroll::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 30%);
+  border-radius: 8px;
+}
+
+.emoji {
+  position: fixed;
+  font-size: 2rem;
+  top: -50px;
+  animation: emoji-top-down 2.5s ease-in-out;
+  z-index: 20;
+  left: 49%;
+}
+
+@keyframes emoji-top-down {
+  0% {
+    opacity: 1;
+    top: -50px;
+    scale: 1.4;
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    opacity: 0.3;
+    top: 50vh;
+    scale: 1;
+    transform: translateX(0px);
+  }
+}
+
+button:enabled {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.font-gluten {
+  font-family: "Gluten", cursive;
+  font-weight: 500;
+}

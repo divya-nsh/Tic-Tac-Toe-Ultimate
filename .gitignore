@@ -1,0 +1,23 @@
+# Common
+**/node_modules
+**/.env
+**/dist
+**/build
+
+# Backend
+/server/data
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.hintrc
+
+# Other
+/dump
