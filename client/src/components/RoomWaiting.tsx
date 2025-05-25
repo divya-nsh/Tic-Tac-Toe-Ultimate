@@ -51,13 +51,13 @@ export function Waiting({
               <button
                 onClick={() => {
                   navigator.clipboard.writeText(
-                    `${window.location.href}/room/join?roomId=${roomId}`
+                    `${window.location.origin}/room/join?roomId=${roomId}`
                   );
                   toast.success("Text Copied to clipboard");
                 }}
                 className="text-blue-400 text-left font-mono active:scale-95 transition-all duration-200 break-all"
               >
-                {`${window.location.href}/room/join?roomId=${roomId}`}
+                {`${window.location.origin}/room/join?roomId=${roomId}`}
               </button>
             </div>
           </div>
