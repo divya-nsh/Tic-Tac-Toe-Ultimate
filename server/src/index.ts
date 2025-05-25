@@ -19,7 +19,8 @@ import {
 const app = express();
 const server = createServer(app);
 const port = process.env.PORT || 3000;
-const origin = process.env.ALLOWED_ORIGIN?.split(",") || "*";
+const origin =
+  process.env.ALLOWED_ORIGIN?.split(",").map((v) => v.trim()) || "*";
 const io = new Server<
   ClientToServerEvents,
   ServerToClientEvents,
